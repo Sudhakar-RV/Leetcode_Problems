@@ -1,0 +1,21 @@
+x = 123
+
+sign = 1
+
+if x < 0:
+    sign = -1
+    x = -x
+
+answer = 0
+
+while x > 0:
+    digit = x % 10
+    answer = answer * 10 + digit
+    x = x // 10
+
+answer = answer * sign
+
+if answer < -2**31 or answer > 2**31 - 1:
+    answer = 0
+
+print(answer) 
