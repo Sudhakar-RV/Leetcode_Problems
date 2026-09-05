@@ -1,0 +1,12 @@
+Input: nums = [1,1,2]
+Output: 2,
+
+solution 
+  k=0
+        a=[]
+        for i in nums:
+            if i not in a:
+                a.append(i)
+                k+=1
+        nums[:k] = a
+        return k
