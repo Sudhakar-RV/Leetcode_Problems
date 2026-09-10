@@ -1,0 +1,12 @@
+Input: nums1 = [1,3], nums2 = [2]
+Output: 2.00000
+
+ nums3 = sorted(nums1 + nums2)
+
+        length = len(nums3)
+        mid = length // 2
+
+        if length % 2 == 1:
+            return nums3[mid]
+        else:
+            return (nums3[mid - 1] + nums3[mid]) / 2.0

@@ -1,0 +1,14 @@
+digits = "23"
+
+phone = {
+    "2": "abc",
+    "3": "def"
+}
+
+result = []
+
+for i in phone[digits[0]]:
+    for j in phone[digits[1]]:
+        result.append(i + j)
+
+print(result)

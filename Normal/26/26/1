@@ -1,0 +1,14 @@
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+    left = 0
+        right = 1
+
+        while left < len(nums) - 1:
+            if nums[left] + nums[right] == target:
+                return [left, right]
+
+            right += 1
+
+            if right == len(nums):
+                left += 1
+                right = left + 1
