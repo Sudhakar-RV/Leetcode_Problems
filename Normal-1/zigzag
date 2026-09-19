@@ -1,0 +1,13 @@
+s = "PAYPALISHIRING"
+rows = 3
+result=['']*rows
+current=0
+step=1
+for ch in s:
+    result[current]+=ch
+    if current==0:
+        step=1
+    elif current==rows-1:
+        step=-1
+    current+=step
+print (''.join(result))
