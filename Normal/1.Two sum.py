@@ -1,10 +1,18 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        left = 0
-        right = 0
-        for left in range(len(nums)-1):
-            for right in range(left+1,len(nums)):
-                if nums[left]+nums[right] == target:
-                    return [left,right]
+        seen = {}
+        for i in range(len(nums)):
+            need = target - nums[i]
+            if need in seen:
+                return [seen[need],i]
+            else:
+                seen[nums[i]] = i
+        
 
+
+
+        
+
+
+        
         
