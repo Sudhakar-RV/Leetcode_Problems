@@ -1,0 +1,10 @@
+nums = [2,3,0,1,4,2]
+maxreach=0
+jump=0
+end=0
+for i in range(len(nums)-1):
+    maxreach=max(maxreach,i+nums[i])
+    if i==end:
+        jump+=1
+        end=maxreach
+print(jump)
