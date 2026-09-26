@@ -1,0 +1,4 @@
+s = "the sky is blue"
+word=s.split()
+word.reverse()
+print(" ".join(word))

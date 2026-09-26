@@ -1,0 +1,11 @@
+strs =["dog","racecar","car"]
+strs.sort()
+start=strs[0]
+end=strs[-1]
+common=[]
+for i in range (min(len(start),len(end))):
+    if start[i]==end[i]:
+        common+=start[i]
+    else:
+        break
+print(common)
